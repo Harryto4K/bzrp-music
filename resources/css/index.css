@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url("/resources/portadas-bzrp/rauw2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 300ms;
+}
+
+h1 {
+   text-align: center;
+    color: white;
+}
+
+h6 {
+    margin: .75rem;
+    color: white;
+    font-size: 16px;
+}
+
+audio {
+   position: absolute; 
+   bottom: 25%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(54,54,255,0.1);
+}
+
+audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+
