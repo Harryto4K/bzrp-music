@@ -18,17 +18,22 @@ body {
 h1 {
    text-align: center;
     color: white;
+    font-family: "Raleway";
+    z-index: 1;
 }
 
 h6 {
     margin: .75rem;
     color: white;
     font-size: 16px;
+    font-family: "Chivo Mono";
+    z-index: 1;
 }
 
 audio {
-   position: absolute; 
+   position: absolute;
    bottom: 25%;
+   z-index: 1;
 }
 
 audio::-webkit-media-controls-panel {
@@ -39,4 +44,29 @@ audio::-webkit-media-controls-current-time-display, audio::-webkit-media-control
     display: none;
 }
 
+select {
+    padding: .5rem;
+    font-family: "Chivo Mono";
+    background-color: lightblue;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    z-index: 1;
+}
+
+select:hover {
+    -webkit-filter: brightness(90%);
+}
+
+select:active {
+    border: 1px solid black;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
 

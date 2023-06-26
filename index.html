@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="resources/css/index.css">
     <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,200;0,700;1,200&family=Raleway:ital,wght@0,100;0,200;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <title>BZRP Music Sessions</title>
 </head>
 <body>
+    <video autoplay muted loop id="video">
+        <source src="/resources/videos-bzrp/rauw.mp4" type="video/mp4">
+    </video>
     <h1 id="title">RAUW ALEJANDRO || BZRP Music Sessions #56</h1>
     <h6>Enter the bzrp session: </h6>
     <select id="music-sessions">
         <option value="Rauw">RAUW ALEJANDRO || BZRP Music Sessions #56</option>
         <option value="PesoPluma">PESO PLUMA || BZRP Music Sessions #55</option>
     </select>
-    <audio src="resources/Bizarap ft Rauw Alejandro – Bzrp Music Sessions, Vol. 56.mp3" controls controlsList="nodownload noplaybackrate" id="audio"> 
+    <audio src="resources/Bizarap ft Rauw Alejandro – Bzrp Music Sessions, Vol. 56.mp3" autoplay controls controlsList="nodownload noplaybackrate" id="audio"> 
 </body>
 </html>
