@@ -31,7 +31,8 @@ input.onchange = function() {
 }
 
 audio.onended = function() {
-    let randomSession = Math.floor(Math.random() * (musicSessions.length - 1)); 
+    let randomSession = Math.floor(Math.random() * (musicSessions.length)); 
+    console.log(randomSession);
     audio.src = musicSessions[randomSession]; 
     body.style.backgroundImage = musicSessions2[randomSession];
     input.value = musicSessions3[randomSession];
